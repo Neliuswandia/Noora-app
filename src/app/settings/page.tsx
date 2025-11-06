@@ -22,7 +22,7 @@ import BottomNavigation from "@/components/BottomNavigation"
 import { useHistory } from "react-router"
 
 export default function SettingsPage() {
-  const [settings, setSettings] = useState({
+  const [settings, setSettings] = useState<any>({
     notifications: {
       dailyCheckIn: true,
       moodReminders: true,
@@ -49,7 +49,7 @@ export default function SettingsPage() {
   })
 
   const [showDeleteAccount, setShowDeleteAccount] = useState(false)
-  const router = useRouter()
+  const router = useHistory()
 
   // Apply theme changes to document with error handling
   useEffect(() => {
@@ -110,7 +110,7 @@ export default function SettingsPage() {
       const newSettings = {
         ...settings,
         [category]: {
-          ...settings[category as keyof typeof settings],
+          ...settings?.[category as keyof typeof settings],
           [setting]: value,
         },
       }

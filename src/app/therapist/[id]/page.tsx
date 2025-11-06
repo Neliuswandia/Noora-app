@@ -20,6 +20,7 @@ import {
 } from "lucide-react"
 
 import BottomNavigation from "@/components/BottomNavigation"
+import { useHistory } from "react-router";
 
 interface Review {
   id: string
@@ -60,7 +61,7 @@ interface Therapist {
 
 export default function TherapistProfile() {
   const params = useParams()
-  const router = useRouter()
+  const router = useHistory()
   const [isFavorited, setIsFavorited] = useState(false)
   const [activeTab, setActiveTab] = useState("overview")
 
@@ -159,7 +160,7 @@ export default function TherapistProfile() {
       {/* Header */}
       <header className="bg-card shadow-sm p-4 sticky top-0 z-10">
         <div className="flex items-center justify-between">
-          <button onClick={() => router.back()} className="p-2 hover:bg-muted rounded-full transition-colors">
+          <button onClick={() => router.goBack()} className="p-2 hover:bg-muted rounded-full transition-colors">
             <ArrowLeft className="w-6 h-6 text-foreground" />
           </button>
           <div className="flex items-center space-x-2">

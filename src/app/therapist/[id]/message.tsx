@@ -5,6 +5,7 @@ import type React from "react"
 import { useState, useRef, useEffect } from "react"
 import { useParams, useRouter } from "next/navigation"
 import { ArrowLeft, Send, Paperclip, Smile, MoreVertical, Camera, File } from "lucide-react"
+import { useHistory } from "react-router"
 
 interface Message {
   id: string
@@ -19,7 +20,7 @@ interface Message {
 
 export default function TherapistMessage() {
   const params = useParams()
-  const router = useRouter()
+  const router = useHistory()
   const [message, setMessage] = useState("")
   const [messages, setMessages] = useState<Message[]>([
     {
@@ -122,7 +123,7 @@ export default function TherapistMessage() {
     }
   }
 
-  const handleKeyPress = (e: React.KeyEvent) => {
+  const handleKeyPress = (e: any) => {
     if (e.key === "Enter" && !e.shiftKey) {
       e.preventDefault()
       handleSendMessage()
@@ -162,7 +163,7 @@ export default function TherapistMessage() {
       {/* Header */}
       <header className="bg-white shadow-sm p-4 flex items-center justify-between border-b">
         <div className="flex items-center space-x-3">
-          <button onClick={() => router.back()} className="p-2 hover:bg-[#F5F7FA] rounded-full transition-colors">
+          <button onClick={() => router.goBack()} className="p-2 hover:bg-[#F5F7FA] rounded-full transition-colors">
             <ArrowLeft className="w-6 h-6 text-[#333333]" />
           </button>
 

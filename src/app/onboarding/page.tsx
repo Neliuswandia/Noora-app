@@ -58,7 +58,7 @@ export default function OnboardingPage() {
     router.push("/dashboard")
   }
 
-  const CurrentStepComponent = steps[currentStep].component
+  const CurrentStepComponent: any = steps[currentStep].component
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#F5F7FA] to-[#E8F4FD] flex flex-col">
@@ -86,7 +86,9 @@ export default function OnboardingPage() {
           <h1 className="text-2xl font-bold text-gray-800 mb-2 font-poppins">{steps[currentStep].title}</h1>
           <p className="text-gray-600 font-lora mb-8">{steps[currentStep].subtitle}</p>
 
-          <CurrentStepComponent preferences={preferences} setPreferences={setPreferences} onNext={handleNext} />
+          <CurrentStepComponent 
+          preferences={preferences} 
+          setPreferences={setPreferences} onNext={handleNext} />
         </div>
       </main>
     </div>

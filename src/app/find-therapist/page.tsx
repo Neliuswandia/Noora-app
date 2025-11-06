@@ -94,7 +94,7 @@ export default function FindTherapist() {
   }
 
   return (
-    <div className="min-h-screen bg-background pb-20">
+    <div className="overflow-auto h-screen bg-background text-black pb-20">
       {/* Header */}
       <header className="bg-card shadow-sm p-6">
         <h1 className="text-2xl font-bold text-foreground font-poppins mb-4">Find a Therapist</h1>

@@ -8,7 +8,7 @@ import { useHistory } from "react-router"
 
 
 export default function EditProfilePage() {
-  const router = useRouter()
+  const router = useHistory()
   const [isLoading, setIsLoading] = useState(false)
   const [profileData, setProfileData] = useState({
     name: "",

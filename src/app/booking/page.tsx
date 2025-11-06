@@ -4,10 +4,11 @@ import { useState } from "react"
 import { useParams, useRouter } from "next/navigation"
 import { Calendar, Clock, Video, Phone, MapPin, ArrowLeft, Check } from "lucide-react"
 import BottomNavigation from "@/components/BottomNavigation"
+import { useHistory } from "react-router"
 
 export default function BookingPage() {
   const { therapist: therapistId } = useParams()
-  const router = useRouter()
+  const router = useHistory()
 
   const [selectedDate, setSelectedDate] = useState("")
   const [selectedTime, setSelectedTime] = useState("")

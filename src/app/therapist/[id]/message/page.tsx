@@ -15,7 +15,7 @@ interface Message {
 }
 
 export default function TherapistMessagePage() {
-  const router = useRouter()
+  const router = useHistory()
   const [message, setMessage] = useState("")
   const [messages, setMessages] = useState<Message[]>([
     {
@@ -136,7 +136,7 @@ export default function TherapistMessagePage() {
     <div className="flex flex-col h-screen bg-[#F5F7FA]">
       {/* Header */}
       <header className="bg-white shadow-sm p-4 flex items-center space-x-4">
-        <button onClick={() => router.back()} className="p-2 hover:bg-gray-100 rounded-full transition-colors">
+        <button onClick={() => router.goBack()} className="p-2 hover:bg-gray-100 rounded-full transition-colors">
           <ArrowLeft className="w-5 h-5 text-[#666666]" />
         </button>
 
