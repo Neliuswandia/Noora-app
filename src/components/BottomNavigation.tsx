@@ -2,17 +2,30 @@
 
 
 import { Home, MessageCircle, TrendingUp, Settings, Target, Moon } from "lucide-react"
-import { usePathname } from "next/navigation"
+// next/navigation is Next.js-only and not available when running with Vite.
+// Provide a small fallback hook that reads the browser pathname.
+const usePathname = () => {
+  if (typeof window === "undefined") return "/";
+  return window.location.pathname;
+}
 
 interface BottomNavigationProps {
   currentPage?: string
   isGuest?: boolean
 }
 
+interface NavItem {
+  href: string
+  icon: any
+  label: string
+  id: string
+  disabled?: boolean
+}
+
 export default function BottomNavigation({ currentPage, isGuest = false }: BottomNavigationProps) {
   const pathname = usePathname()
 
-  const navItems = [
+  const navItems: NavItem[] = [
     {
       href: isGuest ? "/dashboard?guest=true" : "/dashboard",
       icon: Home,
@@ -24,6 +37,7 @@ export default function BottomNavigation({ currentPage, isGuest = false }: Botto
       icon: MessageCircle,
       label: "AI Chat",
       id: "chat",
+      // disabled: true, // example if you want to disable this item for guests
     },
     {
       href: "/mood-tracker",

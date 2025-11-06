@@ -1,14 +1,13 @@
 "use client"
 
 import { useState } from "react"
+import { useParams, useRouter } from "next/navigation"
 import { Calendar, Clock, Video, Phone, MapPin, ArrowLeft, Check } from "lucide-react"
 import BottomNavigation from "@/components/BottomNavigation"
 
-import { useSearchParams } from "next/navigation"
-
 export default function BookingPage() {
-  const searchParams = useSearchParams()
-  const therapistId = searchParams?.get("therapist")
+  const { therapist: therapistId } = useParams()
+  const router = useRouter()
 
   const [selectedDate, setSelectedDate] = useState("")
   const [selectedTime, setSelectedTime] = useState("")

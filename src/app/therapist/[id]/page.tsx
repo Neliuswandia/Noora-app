@@ -1,8 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { useParams } from "next/navigation"
-import useHistory
+import { useParams, useRouter } from "next/navigation";
 import {
   ArrowLeft,
   Star,
