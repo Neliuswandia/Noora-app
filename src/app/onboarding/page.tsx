@@ -13,7 +13,7 @@ export default function OnboardingPage() {
     notifications: true,
     aiTone: "supportive",
   })
-  const router = useRouter()
+  const router = useHistory()
 
   const steps = [
     {
