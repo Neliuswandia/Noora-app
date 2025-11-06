@@ -17,4 +17,4 @@ dist/
 .env.production.local
 
 # Logs
-npm-debug.log*
+npm-debug.log*debug.log
