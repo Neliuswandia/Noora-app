@@ -42,7 +42,6 @@ export default function Dashboard() {
   }, [])
 
   const moodOptions = [
-    { emoji: "😊", label: "Great", value: "great", color: "bg-blue-500"  },
     { emoji: "🙂", label: "Good", value: "good", color: "bg-green-400" },
     { emoji: "😐", label: "Okay", value: "okay", color: "bg-yellow-500" },
     { emoji: "😔", label: "Low", value: "low", color: "bg-orange-500" },
@@ -106,7 +105,7 @@ export default function Dashboard() {
             <h1 className="text-xl sm:text-2xl font-bold text-gray-800 font-poppins truncate">Welcome back! 👋</h1>
           </div>
           <a href="/crisis-support">
-            <button className="btn-crisis p-2 sm:p-3 rounded-full flex-shrink-0">
+            <button className="btn-crisis p-2 sm:p-3 rounded-full shrink-0">
               <Shield className="w-4 h-4 sm:w-5 sm:h-5" />
             </button>
           </a>
@@ -136,9 +135,8 @@ export default function Dashboard() {
               <div key={goal.id} className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
                 <div className="flex items-center space-x-3 flex-1">
                   <button
-                    className={`w-5 h-5 rounded-full border-2 flex items-center justify-center ${
-                      goal.completed ? "bg-green-500 border-green-500" : "border-gray-300"
-                    }`}
+                    className={`w-5 h-5 rounded-full border-2 flex items-center justify-center ${goal.completed ? "bg-green-500 border-green-500" : "border-gray-300"
+                      }`}
                   >
                     {goal.completed && <CheckCircle className="w-3 h-3 text-white" />}
                   </button>
@@ -175,11 +173,10 @@ export default function Dashboard() {
               <button
                 key={mood.value}
                 onClick={() => handleMoodSelect(mood.value)}
-                className={`p-2 sm:p-3 rounded-xl text-center transition-all duration-200 ${
-                  currentMood === mood.value
+                className={`p-2 sm:p-3 rounded-xl text-center transition-all duration-200 ${currentMood === mood.value
                     ? "bg-blue-500 text-white shadow-lg scale-105"
                     : "bg-gray-100 hover:bg-blue-50"
-                }`}
+                  }`}
               >
                 <div className="text-lg sm:text-2xl mb-1">{mood.emoji}</div>
                 <div className="text-xs font-medium">{mood.label}</div>
@@ -250,7 +247,7 @@ export default function Dashboard() {
 
         {/* AI Companion Quick Access */}
         <div className="card">
-          <h3 className="text-base sm:text-lg font-semibold mb-3 font-poppins flex items-center">
+          <h3 className="text-base sm:text-lg font-semibold mb-3 font-poppins flex items-center text-black">
             <MessageCircle className="w-4 h-4 sm:w-5 sm:h-5 mr-2 text-blue-500" />
             Chat with your AI Companion
           </h3>
@@ -258,7 +255,7 @@ export default function Dashboard() {
             I'm here to listen and support you. What's on your mind?
           </p>
           <a href="/ai-companion">
-            <button className="btn-primary w-full">Start Conversation</button>
+            <button className="btn-primary w-full text-sm py-2">Start Conversation</button>
           </a>
         </div>
 
@@ -267,7 +264,7 @@ export default function Dashboard() {
           <a href={isGuest ? "#" : "/find-therapist"} className={isGuest ? "opacity-50 pointer-events-none" : ""}>
             <div className="card text-center hover:shadow-lg transition-all duration-200 h-full">
               <Calendar className="w-6 h-6 sm:w-8 sm:h-8 text-blue-500 mx-auto mb-2" />
-              <h4 className="font-semibold text-sm font-poppins">Find a Therapist</h4>
+              <h4 className="font-semibold text-sm text-black font-poppins">Find a Therapist</h4>
               <p className="text-xs text-gray-600 mt-1">Book sessions</p>
               {isGuest && <p className="text-xs text-red-500 mt-1">Login required</p>}
             </div>
@@ -276,7 +273,7 @@ export default function Dashboard() {
           <a href="/sessions">
             <div className="card text-center hover:shadow-lg transition-all duration-200 h-full">
               <Calendar className="w-6 h-6 sm:w-8 sm:h-8 text-purple-500 mx-auto mb-2" />
-              <h4 className="font-semibold text-sm font-poppins">My Sessions</h4>
+              <h4 className="font-semibold text-sm text-black font-poppins">My Sessions</h4>
               <p className="text-xs text-gray-600 mt-1">View appointments</p>
             </div>
           </a>
@@ -284,7 +281,7 @@ export default function Dashboard() {
           <a href="/sleep-tracker">
             <div className="card text-center hover:shadow-lg transition-all duration-200 h-full">
               <Moon className="w-6 h-6 sm:w-8 sm:h-8 text-indigo-500 mx-auto mb-2" />
-              <h4 className="font-semibold text-sm font-poppins">Sleep Tracker</h4>
+              <h4 className="font-semibold text-sm text-black font-poppins">Sleep Tracker</h4>
               <p className="text-xs text-gray-600 mt-1">Monitor sleep patterns</p>
             </div>
           </a>
@@ -292,7 +289,7 @@ export default function Dashboard() {
           <a href={isGuest ? "#" : "/community"} className={isGuest ? "opacity-50 pointer-events-none" : ""}>
             <div className="card text-center hover:shadow-lg transition-all duration-200 h-full">
               <Users className="w-6 h-6 sm:w-8 sm:h-8 text-green-400 mx-auto mb-2" />
-              <h4 className="font-semibold text-sm font-poppins">Community</h4>
+              <h4 className="font-semibold text-sm text-black font-poppins">Community</h4>
               <p className="text-xs text-gray-600 mt-1">Connect & share</p>
               {isGuest && <p className="text-xs text-red-500 mt-1">Login required</p>}
             </div>
@@ -301,7 +298,7 @@ export default function Dashboard() {
           <a href="/resources">
             <div className="card text-center hover:shadow-lg transition-all duration-200 h-full">
               <BookOpen className="w-6 h-6 sm:w-8 sm:h-8 text-blue-500 mx-auto mb-2" />
-              <h4 className="font-semibold text-sm font-poppins">Learn & Grow</h4>
+              <h4 className="font-semibold text-sm text-black font-poppins">Learn & Grow</h4>
               <p className="text-xs text-gray-600 mt-1">Educational resources</p>
             </div>
           </a>
@@ -309,7 +306,7 @@ export default function Dashboard() {
           <a href="/games">
             <div className="card text-center hover:shadow-lg transition-all duration-200 h-full">
               <Gamepad2 className="w-6 h-6 sm:w-8 sm:h-8 text-green-400 mx-auto mb-2" />
-              <h4 className="font-semibold text-sm font-poppins">Games Hub</h4>
+              <h4 className="font-semibold text-sm text-black font-poppins">Games Hub</h4>
               <p className="text-xs text-gray-600 mt-1">Therapeutic games</p>
             </div>
           </a>
@@ -317,7 +314,7 @@ export default function Dashboard() {
           <a href="/mood-tracker">
             <div className="card text-center hover:shadow-lg transition-all duration-200 h-full">
               <TrendingUp className="w-6 h-6 sm:w-8 sm:h-8 text-red-500 mx-auto mb-2" />
-              <h4 className="font-semibold text-sm font-poppins">Mood Tracker</h4>
+              <h4 className="font-semibold text-sm text-black font-poppins">Mood Tracker</h4>
               <p className="text-xs text-gray-600 mt-1">Track patterns</p>
             </div>
           </a>
