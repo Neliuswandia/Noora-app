@@ -102,7 +102,7 @@ export default function EditProfilePage() {
   }
 
   return (
-    <div className="h-screen bg-[#F5F7FA] pb-20">
+    <div className="overflow-auto h-screen  bg-[#F5F7FA] pb-20">
       {/* Header */}
       <header className="bg-white shadow-sm p-6 flex items-center">
         <a href="/settings">
@@ -120,7 +120,7 @@ export default function EditProfilePage() {
         {/* Profile Picture */}
         <div className="card text-center">
           <div className="relative inline-block mb-4">
-            <div className="w-24 h-24 bg-gradient-to-br from-blue-500 to-green-300 rounded-full flex items-center justify-center overflow-hidden">
+            <div className="w-24 h-24 bg-linear-to-br from-blue-500 to-green-300 rounded-full flex items-center justify-center overflow-hidden">
               {profileData.profileImage ? (
                 <img
                   src={profileData.profileImage || "/placeholder.svg"}
