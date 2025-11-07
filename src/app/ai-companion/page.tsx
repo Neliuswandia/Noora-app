@@ -222,9 +222,9 @@ export default function AICompanion() {
               type="text"
               value={inputText}
               onChange={(e) => setInputText(e.target.value)}
-              onKeyPress={(e) => e.key === "Enter" && handleSendMessage()}
+              onKeyUp={(e) => e.key === "Enter" && handleSendMessage()}
               placeholder="Type your message or use voice..."
-              className="w-full p-3 pr-12 rounded-full border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#4A90E2] focus:border-transparent"
+              className="w-full p-3 pr-12 rounded-full border text-gray-600 border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#4A90E2] focus:border-transparent"
             />
             <button
               onClick={handleSendMessage}
