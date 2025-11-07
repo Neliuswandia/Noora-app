@@ -42,7 +42,7 @@ export default function Dashboard() {
   }, [])
 
   const moodOptions = [
-    { emoji: "😊", label: "Great", value: "great", color: "bg-blue-500" },
+    { emoji: "😊", label: "Great", value: "great", color: "bg-blue-500"  },
     { emoji: "🙂", label: "Good", value: "good", color: "bg-green-400" },
     { emoji: "😐", label: "Okay", value: "okay", color: "bg-yellow-500" },
     { emoji: "😔", label: "Low", value: "low", color: "bg-orange-500" },
@@ -116,14 +116,14 @@ export default function Dashboard() {
       <main className="p-4 sm:p-6 space-y-4 sm:space-y-6">
         {/* Daily Quote */}
         <div className="card bg-linear-to-r from-blue-500 to-green-400 text-white">
-          <h3 className="font-semibold mb-2 font-poppins text-sm sm:text-base">Daily Inspiration</h3>
+          <h3 className="font-semibold mb-2 font-poppins text-sm sm:text-base ">Daily Inspiration</h3>
           <p className="font-lora italic text-sm leading-relaxed">{dailyQuote}</p>
         </div>
 
         {/* Today's Goals */}
         <div className="card">
           <div className="flex items-center justify-between mb-4">
-            <h3 className="text-base sm:text-lg font-semibold font-poppins flex items-center">
+            <h3 className="text-base sm:text-lg font-semibold font-poppins flex items-center text-black">
               <Target className="w-4 h-4 sm:w-5 sm:h-5 mr-2 text-green-500" />
               Today's Goals
             </h3>
@@ -166,7 +166,7 @@ export default function Dashboard() {
 
         {/* Mood Check-in */}
         <div className="card">
-          <h3 className="text-base sm:text-lg font-semibold mb-4 font-poppins flex items-center">
+          <h3 className="text-base sm:text-lg font-semibold mb-4 font-poppins flex items-center text-black">
             <Heart className="w-4 h-4 sm:w-5 sm:h-5 mr-2 text-red-500" />
             How are you feeling?
           </h3>
