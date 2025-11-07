@@ -252,7 +252,7 @@ export default function SleepTracker() {
   }
 
   return (
-    <div className="min-h-screen bg-[#F5F7FA] pb-20">
+    <div className="overflow-auto min-h-screen bg-[#F5F7FA] pb-20">
       {/* Header */}
       <header className="bg-white shadow-sm p-6">
         <div className="flex items-center justify-between">

@@ -151,9 +151,9 @@ export default function ResourcesPage() {
   }
 
   return (
-    <div className="min-h-screen bg-[#F5F7FA] pb-20">
+    <div className="overflow-auto min-h-screen bg-[#F5F7FA] pb-20">
       {/* Header */}
-      <header className="bg-gradient-to-r from-[#4A90E2] to-[#A3D8C6] text-white p-6">
+      <header className="bg-linear-to-r from-[#4A90E2] to-[#A3D8C6] text-white p-6">
         <div className="flex items-center justify-between mb-4">
           <div>
             <h1 className="text-2xl font-bold font-poppins">Learn & Grow</h1>

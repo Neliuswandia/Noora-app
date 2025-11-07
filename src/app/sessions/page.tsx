@@ -88,7 +88,7 @@ export default function SessionsPage() {
   }
 
   return (
-    <div className="min-h-screen bg-[#F5F7FA] pb-20">
+    <div className="overflow-auto min-h-screen bg-[#F5F7FA] pb-20">
       {/* Header */}
       <header className="bg-white shadow-sm p-6">
         <h1 className="text-2xl font-bold text-[#333333] font-poppins mb-4">My Sessions</h1>

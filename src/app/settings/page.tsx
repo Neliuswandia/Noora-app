@@ -176,7 +176,7 @@ export default function SettingsPage() {
   }
 
   return (
-    <div className="min-h-screen bg-background pb-20">
+    <div className="overflow-auto min-h-screen bg-background pb-20">
       {/* Header */}
       <header className="bg-card shadow-sm border-b border-border p-6">
         <h1 className="text-2xl font-bold text-foreground font-poppins">Settings</h1>
