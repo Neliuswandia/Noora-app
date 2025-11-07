@@ -156,7 +156,7 @@ export default function TherapistProfile() {
   ]
 
   return (
-    <div className="min-h-screen bg-background pb-20">
+    <div className="h-screen bg-background pb-20">
       {/* Header */}
       <header className="bg-card shadow-sm p-4 sticky top-0 z-10">
         <div className="flex items-center justify-between">

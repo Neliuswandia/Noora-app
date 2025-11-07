@@ -510,7 +510,7 @@ export default function EmotionPuzzlePage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#E8F4FD] to-[#F5F7FA]">
+    <div className="h-screen bg-linear-to-b from-[#E8F4FD] to-[#F5F7FA]">
       {/* Reward Notifications */}
       <RewardNotification achievements={newUnlocks} onClose={clearNewUnlocks} />
 

@@ -107,7 +107,7 @@ export default function CopingKit() {
   }
 
   return (
-    <div className="overflow-auto min-h-screen bg-[#F5F7FA] pb-20">
+    <div className="overflow-auto h-screen bg-[#F5F7FA] pb-20">
       {/* Header */}
       <header className="bg-white shadow-sm p-6">
         <div className="flex items-center justify-between">
@@ -147,7 +147,7 @@ export default function CopingKit() {
               <button
                 key={category.id}
                 onClick={() => setSelectedCategory(category.id)}
-                className={`flex-shrink-0 px-4 py-2 rounded-full text-sm font-medium transition-all ${
+                className={`shrink-0 px-4 py-2 rounded-full text-sm font-medium transition-all ${
                   selectedCategory === category.id
                     ? "bg-[#4A90E2] text-white"
                     : "bg-[#F5F7FA] text-[#666666] hover:bg-[#E8F4FD]"
@@ -167,7 +167,7 @@ export default function CopingKit() {
               <div key={tool.id} className="card">
                 <div className="flex items-start justify-between">
                   <div className="flex items-start space-x-3 flex-1">
-                    <div className="w-12 h-12 bg-gradient-to-br from-[#4A90E2] to-[#A3D8C6] rounded-xl flex items-center justify-center">
+                    <div className="w-12 h-12 bg-linear-to-br from-[#4A90E2] to-[#A3D8C6] rounded-xl flex items-center justify-center">
                       <Icon className="w-6 h-6 text-white" />
                     </div>
                     <div className="flex-1">

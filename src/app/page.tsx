@@ -7,11 +7,11 @@ export default function WelcomePage() {
   const [isLoading, setIsLoading] = useState(false)
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#F5F7FA] to-[#E8F4FD] flex flex-col">
+    <div className="min-h-screen bg-linear-to-br from-[#F5F7FA] to-[#E8F4FD] flex flex-col">
       {/* Header */}
       <header className="p-6 text-center">
         <div className="flex items-center justify-center mb-4">
-          <div className="w-16 h-16 bg-gradient-to-br from-[#4A90E2] to-[#A3D8C6] rounded-full flex items-center justify-center shadow-lg">
+          <div className="w-16 h-16 bg-linear-to-br from-[#4A90E2] to-[#A3D8C6] rounded-full flex items-center justify-center shadow-lg">
             <Heart className="w-8 h-8 text-white" />
           </div>
         </div>

@@ -41,7 +41,7 @@ export default function LoginPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#F5F7FA] to-[#E8F4FD] flex flex-col">
+    <div className="min-h-screen bg-linear-to-br from-[#F5F7FA] to-[#E8F4FD] flex flex-col">
       {/* Header */}
       <header className="p-6">
         <div className="flex items-center">

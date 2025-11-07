@@ -159,7 +159,7 @@ export default function TherapistMessage() {
   }
 
   return (
-    <div className="min-h-screen bg-[#F5F7FA] flex flex-col">
+    <div className="h-screen bg-[#F5F7FA] flex flex-col">
       {/* Header */}
       <header className="bg-white shadow-sm p-4 flex items-center justify-between border-b">
         <div className="flex items-center space-x-3">

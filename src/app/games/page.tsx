@@ -70,9 +70,9 @@ export default function GamesHubPage() {
   const achievements = userRewards.achievements.filter((a) => a.unlocked).slice(0, 4)
 
   return (
-    <div className="min-h-screen bg-[#F5F7FA] pb-20">
+    <div className="h-screen bg-[#F5F7FA] pb-20">
       {/* Header */}
-      <header className="bg-gradient-to-r from-[#A3D8C6] to-[#4A90E2] text-white p-4 sm:p-6">
+      <header className="bg-linear-to-r from-[#A3D8C6] to-[#4A90E2] text-white p-4 sm:p-6">
         <div className="flex items-center justify-between mb-4">
           <div className="min-w-0 flex-1">
             <h1 className="text-xl sm:text-2xl font-bold font-poppins">Games Hub</h1>

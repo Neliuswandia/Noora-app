@@ -215,7 +215,7 @@ export default function StoryWeaverPage() {
 
   if (showReflection && currentPrompt) {
     return (
-      <div className="min-h-screen bg-gradient-to-b from-[#E8F4FD] to-[#F5F7FA]">
+      <div className="h-screen bg-linear-to-b from-[#E8F4FD] to-[#F5F7FA]">
         <RewardNotification achievements={newUnlocks} onClose={clearNewUnlocks} />
 
         <header className="bg-white shadow-sm p-4">
@@ -288,7 +288,7 @@ export default function StoryWeaverPage() {
 
   if (currentPrompt && story) {
     return (
-      <div className="min-h-screen bg-gradient-to-b from-[#E8F4FD] to-[#F5F7FA]">
+      <div className="h-screen bg-linear-to-b from-[#E8F4FD] to-[#F5F7FA]">
         <RewardNotification achievements={newUnlocks} onClose={clearNewUnlocks} />
 
         <header className="bg-white shadow-sm p-4">
@@ -354,7 +354,7 @@ export default function StoryWeaverPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#E8F4FD] to-[#F5F7FA]">
+    <div className="h-screen bg-linear-to-b from-[#E8F4FD] to-[#F5F7FA]">
       <RewardNotification achievements={newUnlocks} onClose={clearNewUnlocks} />
 
       <header className="bg-white shadow-sm p-4">

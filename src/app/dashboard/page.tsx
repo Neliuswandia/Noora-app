@@ -115,7 +115,7 @@ export default function Dashboard() {
 
       <main className="p-4 sm:p-6 space-y-4 sm:space-y-6">
         {/* Daily Quote */}
-        <div className="card bg-gradient-to-r from-blue-500 to-green-400 text-white">
+        <div className="card bg-linear-to-r from-blue-500 to-green-400 text-white">
           <h3 className="font-semibold mb-2 font-poppins text-sm sm:text-base">Daily Inspiration</h3>
           <p className="font-lora italic text-sm leading-relaxed">{dailyQuote}</p>
         </div>
@@ -332,7 +332,7 @@ export default function Dashboard() {
         </div>
 
         {/* Crisis Support Card */}
-        <div className="card bg-gradient-to-r from-red-500 to-pink-500 text-white">
+        <div className="card bg-linear-to-r from-red-500 to-pink-500 text-white">
           <h3 className="font-semibold mb-2 font-poppins flex items-center text-sm sm:text-base">
             <Shield className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
             Need immediate support?

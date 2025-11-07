@@ -61,7 +61,7 @@ export default function OnboardingPage() {
   const CurrentStepComponent: any = steps[currentStep].component
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#F5F7FA] to-[#E8F4FD] flex flex-col">
+    <div className="h-screen bg-linear-to-br from-[#F5F7FA] to-[#E8F4FD] flex flex-col">
       {/* Progress Bar */}
       <div className="p-6">
         <div className="flex items-center justify-between mb-4">

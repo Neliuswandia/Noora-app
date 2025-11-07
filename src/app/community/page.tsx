@@ -159,7 +159,7 @@ export default function CommunityPage() {
   }
 
   return (
-    <div className=" overflow-auto min-h-screen bg-[#F5F7FA] pb-20">
+    <div className=" overflow-auto h-screen bg-[#F5F7FA] pb-20">
       {/* Header */}
       <header className="bg-white shadow-sm p-6">
         <div className="flex items-center justify-between mb-4">
@@ -207,7 +207,7 @@ export default function CommunityPage() {
 
       <main className="p-6 space-y-6">
         {/* Community Guidelines */}
-        <div className="card bg-gradient-to-r from-blue-500 to-green-300 text-white">
+        <div className="card bg-linear-to-r from-blue-500 to-green-300 text-white">
           <h3 className="font-semibold mb-2 font-poppins">Community Guidelines</h3>
           <p className="text-sm font-lora opacity-90">
             Be kind, respectful, and supportive. This is a safe space for everyone to share and heal together.
@@ -222,7 +222,7 @@ export default function CommunityPage() {
                 <button
                   key={category.id}
                   onClick={() => setSelectedCategory(category.id)}
-                  className={`flex-shrink-0 px-4 py-2 rounded-full text-sm font-medium transition-all ${
+                  className={`shrink-0 px-4 py-2 rounded-full text-sm font-medium transition-all ${
                     selectedCategory === category.id
                       ? "bg-blue-500 text-white"
                       : "bg-white text-[#666666] hover:bg-blue-50 shadow-sm"

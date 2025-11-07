@@ -1,7 +1,7 @@
 export default function Loading() {
   return (
-    <div className="min-h-screen bg-[#F5F7FA] pb-20">
-      <header className="bg-gradient-to-r from-[#A3D8C6] to-[#4A90E2] text-white p-6">
+    <div className="h-screen bg-[#F5F7FA] pb-20">
+      <header className="bg-linear-to-r from-[#A3D8C6] to-[#4A90E2] text-white p-6">
         <div className="animate-pulse">
           <div className="h-8 bg-white bg-opacity-20 rounded w-32 mb-2"></div>
           <div className="h-4 bg-white bg-opacity-20 rounded w-48"></div>

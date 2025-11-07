@@ -65,7 +65,7 @@ export default function ResourceDetailPage() {
   }
 
   return (
-    <div className="min-h-screen bg-[#F5F7FA]">
+    <div className="h-screen bg-[#F5F7FA]">
       {/* Header */}
       <header className="bg-white shadow-sm p-4">
         <div className="flex items-center justify-between">

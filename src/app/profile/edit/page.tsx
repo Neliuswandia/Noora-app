@@ -102,7 +102,7 @@ export default function EditProfilePage() {
   }
 
   return (
-    <div className="min-h-screen bg-[#F5F7FA] pb-20">
+    <div className="h-screen bg-[#F5F7FA] pb-20">
       {/* Header */}
       <header className="bg-white shadow-sm p-6 flex items-center">
         <a href="/settings">

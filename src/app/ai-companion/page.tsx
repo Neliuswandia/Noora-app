@@ -132,7 +132,7 @@ export default function AICompanion() {
       <header className="bg-white shadow-sm p-4 border-b">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
-            <div className="w-10 h-10 bg-gradient-to-br from-[#4A90E2] to-[#A3D8C6] rounded-full flex items-center justify-center mr-3">
+            <div className="w-10 h-10 bg-linear-to-br from-[#4A90E2] to-[#A3D8C6] rounded-full flex items-center justify-center mr-3">
               <span className="text-white font-semibold">AI</span>
             </div>
             <div>

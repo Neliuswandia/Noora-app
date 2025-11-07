@@ -83,9 +83,9 @@ export default function CrisisSupport() {
   ]
 
   return (
-    <div className="min-h-screen bg-[#F5F7FA] pb-20">
+    <div className="h-screen bg-[#F5F7FA] pb-20">
       {/* Header */}
-      <header className="bg-gradient-to-r from-[#FF6F61] to-[#FF8A80] text-white p-6">
+      <header className="bg-linear-to-r from-[#FF6F61] to-[#FF8A80] text-white p-6">
         <div className="flex items-center mb-4">
           <Shield className="w-8 h-8 mr-3" />
           <div>
