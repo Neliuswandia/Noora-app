@@ -211,7 +211,7 @@ export default function SettingsPage() {
             <div className="flex items-center justify-between">
               <div>
                 <p className="font-medium text-black text-foreground">Daily Check-in Reminders</p>
-                <p className="text-sm  text-black text-muted-foreground">Get reminded to log your mood</p>
+                <p className="text-sm text-gray-600 text-muted-foreground">Get reminded to log your mood</p>
               </div>
               <label className="relative inline-flex items-center cursor-pointer">
                 <input
@@ -227,7 +227,7 @@ export default function SettingsPage() {
             <div className="flex items-center justify-between">
               <div>
                 <p className="font-medium text-black text-foreground">Mood Reminders</p>
-                <p className="text-sm text-black text-muted-foreground">Gentle reminders to track your mood</p>
+                <p className="text-sm text-gray-600 text-muted-foreground">Gentle reminders to track your mood</p>
               </div>
               <label className="relative inline-flex items-center cursor-pointer">
                 <input
@@ -243,7 +243,7 @@ export default function SettingsPage() {
             <div className="flex items-center justify-between">
               <div>
                 <p className="font-medium text-black text-foreground">Community Updates</p>
-                <p className="text-sm text-black text-muted-foreground">New posts and group activities</p>
+                <p className="text-sm text-gray-600 text-muted-foreground">New posts and group activities</p>
               </div>
               <label className="relative inline-flex items-center cursor-pointer">
                 <input
@@ -282,7 +282,7 @@ export default function SettingsPage() {
             <div className="flex items-center justify-between">
               <div>
                 <p className="font-medium text-black text-foreground">Voice Responses</p>
-                <p className="text-sm text-black   text-muted-foreground">Enable text-to-speech</p>
+                <p className="text-sm text-gray-600 text-muted-foreground">Enable text-to-speech</p>
               </div>
               <button
                 onClick={() => handleSettingChange("ai", "voiceEnabled", !settings.ai.voiceEnabled)}
@@ -318,7 +318,7 @@ export default function SettingsPage() {
             <div className="flex items-center justify-between">
               <div>
                 <p className="font-medium text-black text-foreground">Theme</p>
-                <p className="text-sm text-black text-muted-foreground">Choose your preferred theme</p>
+                <p className="text-sm text-gray-600 text-muted-foreground">Choose your preferred theme</p>
               </div>
               <button
                 onClick={() =>
@@ -346,7 +346,7 @@ export default function SettingsPage() {
             <div className="flex items-center justify-between">
               <div>
                 <p className="font-medium text-foreground text-black">High Contrast Mode</p>
-                <p className="text-sm text-black text-muted-foreground">Improve readability</p>
+                <p className="text-sm text-gray-600 text-muted-foreground">Improve readability</p>
               </div>
               <label className="relative inline-flex items-center cursor-pointer">
                 <input
@@ -389,7 +389,7 @@ export default function SettingsPage() {
             <div className="flex items-center justify-between">
               <div>
                 <p className="font-medium text-foreground text-black">Data Sharing for Research</p>
-                <p className="text-sm text-muted-foreground text-black">Help improve mental health research</p>
+                <p className="text-sm text-muted-foreground text-gray-600">Help improve mental health research</p>
               </div>
               <label className="relative inline-flex items-center cursor-pointer">
                 <input
@@ -431,9 +431,9 @@ export default function SettingsPage() {
           <div className="space-y-3">
             <button
               onClick={handleLogout}
-              className="w-full flex items-center text-black justify-center p-3 border border-gray-200 rounded-lg text-muted-foreground hover:bg-accent transition-colors"
+              className="w-full flex items-center text-gray-600 justify-center p-3 border border-gray-200 rounded-lg text-muted-foreground hover:bg-accent transition-colors"
             >
-              <LogOut className="w-5 h-5 mr-2 text-black" />
+              <LogOut className="w-5 h-5 mr-2 text-gray-600" />
               Sign Out
             </button>
 
