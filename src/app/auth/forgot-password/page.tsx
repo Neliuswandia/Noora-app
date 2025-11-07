@@ -49,7 +49,7 @@ export default function ForgotPasswordPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#F5F7FA] to-[#E8F4FD] flex flex-col">
+    <div className="min-h-screen bg-linear-to-br from-[#F5F7FA] to-[#E8F4FD] flex flex-col">
       {/* Header */}
       <header className="p-6">
         <div className="flex items-center">
@@ -59,7 +59,7 @@ export default function ForgotPasswordPage() {
             </button>
           </a>
           <div className="flex items-center ml-4">
-            <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-green-300 rounded-full flex items-center justify-center shadow-lg">
+            <div className="w-10 h-10 bg-linear-to-br from-blue-500 to-green-300 rounded-full flex items-center justify-center shadow-lg">
               <Heart className="w-5 h-5 text-white" />
             </div>
             <span className="ml-2 text-xl font-bold text-gray-800 font-poppins">SerenitySpace</span>

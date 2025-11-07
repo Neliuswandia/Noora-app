@@ -98,7 +98,7 @@ export default function OnboardingPage() {
 function WelcomeStep({ onNext }: { onNext: () => void }) {
   return (
     <div className="space-y-8">
-      <div className="w-24 h-24 bg-gradient-to-br from-blue-500 to-green-300 rounded-full flex items-center justify-center mx-auto shadow-lg">
+      <div className="w-24 h-24 bg-linear-to-br from-blue-500 to-green-300 rounded-full flex items-center justify-center mx-auto shadow-lg">
         <Heart className="w-12 h-12 text-white" />
       </div>
 
@@ -270,7 +270,7 @@ function AIPreferencesStep({ preferences, setPreferences, onNext }: any) {
 function CompletionStep({ onNext }: { onNext: () => void }) {
   return (
     <div className="space-y-8">
-      <div className="w-24 h-24 bg-gradient-to-br from-green-400 to-blue-500 rounded-full flex items-center justify-center mx-auto shadow-lg">
+      <div className="w-24 h-24 bg-linear-to-br from-green-400 to-blue-500 rounded-full flex items-center justify-center mx-auto shadow-lg">
         <Heart className="w-12 h-12 text-white" />
       </div>
 

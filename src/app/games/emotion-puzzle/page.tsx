@@ -579,7 +579,7 @@ export default function EmotionPuzzlePage() {
       {/* Affirmation */}
       {currentAffirmation && (
         <div className="fixed top-20 left-4 right-4 z-40">
-          <div className="bg-gradient-to-r from-[#4A90E2] to-[#A3D8C6] text-white p-4 rounded-2xl shadow-lg animate-slide-up">
+          <div className="bg-linear-to-r from-[#4A90E2] to-[#A3D8C6] text-white p-4 rounded-2xl shadow-lg animate-slide-up">
             <p className="text-center font-lora italic">{currentAffirmation}</p>
           </div>
         </div>
@@ -587,9 +587,9 @@ export default function EmotionPuzzlePage() {
 
       <main className="p-6">
         {/* Instructions */}
-        <div className="card mb-6 bg-gradient-to-r from-[#A3D8C6] to-[#4A90E2] text-white">
+        <div className="card mb-6 bg-linear-to-r from-[#A3D8C6] to-[#4A90E2] text-white">
           <div className="flex items-start">
-            <Lightbulb className="w-6 h-6 mr-3 flex-shrink-0 mt-1" />
+            <Lightbulb className="w-6 h-6 mr-3 shrink-0 mt-1" />
             <div>
               <h3 className="font-semibold mb-2 font-poppins">How to Play</h3>
               <p className="text-sm font-lora opacity-90">
@@ -685,7 +685,7 @@ export default function EmotionPuzzlePage() {
 
         {/* Affirmations Earned */}
         {earnedAffirmations.length > 0 && (
-          <div className="card mb-6 bg-gradient-to-r from-purple-50 to-pink-50 border-purple-200">
+          <div className="card mb-6 bg-linear-to-r from-purple-50 to-pink-50 border-purple-200">
             <div className="flex items-center justify-between mb-3">
               <h3 className="font-semibold text-[#333333] font-poppins">Affirmations Earned</h3>
               <button

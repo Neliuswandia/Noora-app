@@ -106,7 +106,7 @@ export default function SignupPage() {
               </button>
             </a>
             <div className="flex items-center ml-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-green-300 rounded-full flex items-center justify-center shadow-lg">
+              <div className="w-10 h-10 bg-linear-to-br from-blue-500 to-green-300 rounded-full flex items-center justify-center shadow-lg">
                 <Heart className="w-5 h-5 text-white" />
               </div>
               <span className="ml-2 text-xl font-bold text-gray-800 font-poppins">SerenitySpace</span>

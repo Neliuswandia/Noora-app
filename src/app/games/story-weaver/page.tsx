@@ -234,7 +234,7 @@ export default function StoryWeaverPage() {
         </header>
 
         <main className="p-6">
-          <div className="card bg-gradient-to-r from-[#4A90E2] to-[#A3D8C6] text-white mb-6">
+          <div className="card bg-linear-to-r from-[#4A90E2] to-[#A3D8C6] text-white mb-6">
             <h2 className="text-xl font-bold font-poppins mb-4">Your Story Journey</h2>
             <div className="space-y-3">
               {story?.content.map((paragraph, index) => (
@@ -373,9 +373,9 @@ export default function StoryWeaverPage() {
       </header>
 
       <main className="p-6">
-        <div className="card mb-6 bg-gradient-to-r from-[#FF6F61] to-[#FF8A80] text-white">
+        <div className="card mb-6 bg-linear-to-r from-[#FF6F61] to-[#FF8A80] text-white">
           <div className="flex items-start">
-            <Sparkles className="w-6 h-6 mr-3 flex-shrink-0 mt-1" />
+            <Sparkles className="w-6 h-6 mr-3 shrink-0 mt-1" />
             <div>
               <h2 className="font-semibold mb-2 font-poppins">Create Your Story</h2>
               <p className="text-sm font-lora opacity-90">

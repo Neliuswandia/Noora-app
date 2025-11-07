@@ -321,7 +321,7 @@ export default function MindfulGardenPage() {
 
       {/* Garden View */}
       <main className="flex-1 relative p-6">
-        <div className="relative h-96 bg-gradient-to-b from-sky-200 to-green-200 rounded-2xl overflow-hidden shadow-lg">
+        <div className="relative h-96 bg-linear-to-b from-sky-200 to-green-200 rounded-2xl overflow-hidden shadow-lg">
           {/* Sky background with gentle animation */}
           <div className="absolute inset-0">
             <div className="absolute top-4 right-8 animate-pulse-gentle">
@@ -340,7 +340,7 @@ export default function MindfulGardenPage() {
           </div>
 
           {/* Ground */}
-          <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-green-600 to-green-400 opacity-80"></div>
+          <div className="absolute bottom-0 left-0 right-0 h-24 bg-linear-to-t from-green-600 to-green-400 opacity-80"></div>
 
           {/* Plants */}
           {plants.map((plant) => (
@@ -396,7 +396,7 @@ export default function MindfulGardenPage() {
 
         {/* Current Task */}
         {currentTask && (
-          <div className="mt-6 card bg-gradient-to-r from-[#4A90E2] to-[#A3D8C6] text-white">
+          <div className="mt-6 card bg-linear-to-r from-[#4A90E2] to-[#A3D8C6] text-white">
             <div className="flex items-center justify-between mb-4">
               <h3 className="font-semibold font-poppins">{currentTask.title}</h3>
               <div className="text-2xl font-bold font-poppins">{formatTime(taskTimer)}</div>

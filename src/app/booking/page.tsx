@@ -225,7 +225,7 @@ export default function BookingPage() {
 
         {/* Session Summary */}
         {selectedDate && selectedTime && (
-          <div className="card bg-gradient-to-r from-blue-500 to-green-300 text-white">
+          <div className="card bg-linear-to-r from-blue-500 to-green-300 text-white">
             <h3 className="font-semibold mb-3 font-poppins">Session Summary</h3>
             <div className="space-y-2 text-sm">
               <div className="flex justify-between">

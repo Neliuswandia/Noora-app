@@ -81,7 +81,7 @@ export default function GamesHubPage() {
             </p>
           </div>
           <a href="/crisis-support">
-            <button className="p-2 sm:p-3 bg-white bg-opacity-20 rounded-full hover:bg-opacity-30 transition-colors flex-shrink-0">
+            <button className="p-2 sm:p-3 bg-white bg-opacity-20 rounded-full hover:bg-opacity-30 transition-colors shrink-0">
               <Shield className="w-4 h-4 sm:w-5 sm:h-5" />
             </button>
           </a>
@@ -109,7 +109,7 @@ export default function GamesHubPage() {
         <RewardsDisplay userRewards={userRewards} />
 
         {/* Welcome Message */}
-        <div className="card bg-gradient-to-r from-[#FF6F61] to-[#FF8A80] text-white">
+        <div className="card bg-linear-to-r from-[#FF6F61] to-[#FF8A80] text-white">
           <h3 className="font-semibold mb-2 font-poppins text-sm sm:text-base">Welcome to Your Wellness Games! 🎮</h3>
           <p className="text-sm font-lora opacity-90">
             These games are designed to support your mental health journey through play, mindfulness, and creative
@@ -129,7 +129,7 @@ export default function GamesHubPage() {
                   {/* Game Image */}
                   <div className="relative mb-4 lg:mb-0 lg:mr-6">
                     <div
-                      className={`w-full lg:w-48 h-32 bg-gradient-to-br ${game.color} rounded-lg flex items-center justify-center relative overflow-hidden`}
+                      className={`w-full lg:w-48 h-32 bg-linear-to-br ${game.color} rounded-lg flex items-center justify-center relative overflow-hidden`}
                     >
                       <GameIcon className="w-12 h-12 sm:w-16 sm:h-16 text-white opacity-80" />
                       {game.isNew && (
@@ -258,7 +258,7 @@ export default function GamesHubPage() {
                 >
                   <div className="flex items-center">
                     <div
-                      className="w-6 h-6 sm:w-8 sm:h-8 rounded-full flex items-center justify-center mr-3 flex-shrink-0"
+                      className="w-6 h-6 sm:w-8 sm:h-8 rounded-full flex items-center justify-center mr-3 shrink-0"
                       style={{ backgroundColor: achievement.color + "20" }}
                     >
                       <Icon className="w-3 h-3 sm:w-4 sm:h-4" style={{ color: achievement.color }} />
@@ -286,7 +286,7 @@ export default function GamesHubPage() {
         </div>
 
         {/* Reflection Prompt */}
-        <div className="card bg-gradient-to-r from-[#4A90E2] to-[#A3D8C6] text-white">
+        <div className="card bg-linear-to-r from-[#4A90E2] to-[#A3D8C6] text-white">
           <h3 className="font-semibold mb-3 font-poppins text-sm sm:text-base">Post-Game Reflection</h3>
           <p className="text-sm font-lora opacity-90 mb-4">
             After playing, consider chatting with your AI companion about your experience. Reflection can deepen the
@@ -303,7 +303,7 @@ export default function GamesHubPage() {
         {/* Safety Notice */}
         <div className="card bg-[#FFF9E6] border border-[#FFE066]">
           <div className="flex items-start">
-            <Shield className="w-4 h-4 sm:w-5 sm:h-5 text-[#FF6F61] mr-3 flex-shrink-0 mt-1" />
+            <Shield className="w-4 h-4 sm:w-5 sm:h-5 text-[#FF6F61] mr-3 shrink-0 mt-1" />
             <div className="min-w-0 flex-1">
               <h4 className="font-semibold text-[#333333] mb-2 font-poppins text-sm sm:text-base">
                 Wellness Gaming Guidelines

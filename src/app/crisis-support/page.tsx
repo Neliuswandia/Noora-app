@@ -212,7 +212,7 @@ export default function CrisisSupport() {
               {safetyPlanSteps.map((step) => (
                 <div key={step.step} className="p-4 bg-[#F5F7FA] rounded-lg">
                   <div className="flex items-start">
-                    <div className="w-8 h-8 bg-[#4A90E2] text-white rounded-full flex items-center justify-center text-sm font-bold mr-3 flex-shrink-0">
+                    <div className="w-8 h-8 bg-[#4A90E2] text-white rounded-full flex items-center justify-center text-sm font-bold mr-3 shrink-0">
                       {step.step}
                     </div>
                     <div className="flex-1">
@@ -271,9 +271,9 @@ export default function CrisisSupport() {
         </div>
 
         {/* Encouragement */}
-        <div className="card bg-gradient-to-r from-[#4A90E2] to-[#A3D8C6] text-white">
+        <div className="card bg-linear-to-r from-[#4A90E2] to-[#A3D8C6] text-white">
           <div className="flex items-start">
-            <Heart className="w-8 h-8 mr-4 flex-shrink-0 mt-1" />
+            <Heart className="w-8 h-8 mr-4 shrink-0 mt-1" />
             <div>
               <h3 className="font-semibold mb-2 font-poppins">You Matter</h3>
               <p className="font-lora text-sm leading-relaxed">

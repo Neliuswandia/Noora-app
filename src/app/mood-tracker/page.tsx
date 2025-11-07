@@ -432,7 +432,7 @@ export default function MoodTracker() {
                       <div className="w-6 h-6 bg-linear-to-r from-[#4A90E2] to-[#A3D8C6] rounded-full flex items-center justify-center">
                         <div className="w-2 h-2 bg-white rounded-full"></div>
                       </div>
-                      <p className="text-sm font-bold text-[#4A90E2] font-poppins text-lg">
+                      <p className="text-sm font-bold text-[#4A90E2] font-poppins">
                         {selectedDate.toLocaleDateString("en-US", {
                           weekday: "long",
                           year: "numeric",

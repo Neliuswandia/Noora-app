@@ -136,7 +136,7 @@ export default function SessionsPage() {
                         <img
                           src={session.therapist.image || "/placeholder.svg"}
                           alt={session.therapist.name}
-                          className="w-14 h-14 sm:w-16 sm:h-16 rounded-full object-cover flex-shrink-0"
+                          className="w-14 h-14 sm:w-16 sm:h-16 rounded-full object-cover shrink-0"
                         />
 
                         <div className="flex-1 w-full">
@@ -200,7 +200,7 @@ export default function SessionsPage() {
                         <img
                           src={session.therapist.image || "/placeholder.svg"}
                           alt={session.therapist.name}
-                          className="w-14 h-14 sm:w-16 sm:h-16 rounded-full object-cover flex-shrink-0"
+                          className="w-14 h-14 sm:w-16 sm:h-16 rounded-full object-cover shrink-0"
                         />
 
                         <div className="flex-1 w-full">

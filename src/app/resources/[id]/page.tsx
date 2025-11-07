@@ -164,7 +164,7 @@ export default function ResourceDetailPage() {
         {/* Crisis Support Notice */}
         <div className="mt-8 card bg-[#FFF9E6] border border-[#FFE066]">
           <div className="flex items-start">
-            <Shield className="w-5 h-5 text-[#FF6F61] mr-3 flex-shrink-0 mt-1" />
+            <Shield className="w-5 h-5 text-[#FF6F61] mr-3 shrink-0 mt-1" />
             <div>
               <h4 className="font-semibold text-[#333333] mb-2 font-poppins">Need Immediate Support?</h4>
               <p className="text-[#666666] font-lora text-sm leading-relaxed mb-3">
