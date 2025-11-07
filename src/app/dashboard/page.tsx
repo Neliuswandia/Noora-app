@@ -42,10 +42,11 @@ export default function Dashboard() {
   }, [])
 
   const moodOptions = [
-    { emoji: "🙂", label: "Good", value: "good", color: "bg-green-400" },
-    { emoji: "😐", label: "Okay", value: "okay", color: "bg-yellow-500" },
-    { emoji: "😔", label: "Low", value: "low", color: "bg-orange-500" },
-    { emoji: "😢", label: "Struggling", value: "struggling", color: "bg-red-500" },
+    { emoji: "😀", label: "Great", value: "great", color: "bg-yellow-300" },
+    { emoji: "🙂", label: "Good", value: "good", color: "bg-green-300" },
+    { emoji: "😐", label: "Okay", value: "okay", color: "bg-purple-300" },
+    { emoji: "😔", label: "Low", value: "low", color: "bg-orange-300" },
+    { emoji: "😢", label: "Struggling", value: "struggling", color: "bg-red-300" },
   ]
 
   // Sample goals data for dashboard preview
@@ -173,9 +174,9 @@ export default function Dashboard() {
               <button
                 key={mood.value}
                 onClick={() => handleMoodSelect(mood.value)}
-                className={`p-2 sm:p-3 rounded-xl text-center transition-all duration-200 ${currentMood === mood.value
+                className={`p-2  sm:p-3 rounded-xl text-center transition-all duration-200 ${currentMood === mood.value
                     ? "bg-blue-500 text-white shadow-lg scale-105"
-                    : "bg-gray-100 hover:bg-blue-50"
+                    : mood.color + " text-white hover:scale-105"
                   }`}
               >
                 <div className="text-lg sm:text-2xl mb-1">{mood.emoji}</div>
