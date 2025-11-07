@@ -417,7 +417,7 @@ export default function SleepTracker() {
                   type="time"
                   value={newEntry.bedtime}
                   onChange={(e) => setNewEntry((prev) => ({ ...prev, bedtime: e.target.value }))}
-                  className="w-full p-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#4A90E2]"
+                  className="w-full p-3 border text-black border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#4A90E2]"
                 />
               </div>
 
@@ -427,7 +427,7 @@ export default function SleepTracker() {
                   type="time"
                   value={newEntry.wakeTime}
                   onChange={(e) => setNewEntry((prev) => ({ ...prev, wakeTime: e.target.value }))}
-                  className="w-full p-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#4A90E2]"
+                  className="w-full p-3 border border-gray-200 text-black rounded-lg focus:outline-none focus:ring-2 focus:ring-[#4A90E2]"
                 />
               </div>
 
@@ -451,7 +451,7 @@ export default function SleepTracker() {
                 max="5"
                 value={newEntry.sleepQuality}
                 onChange={(e) => setNewEntry((prev) => ({ ...prev, sleepQuality: Number(e.target.value) }))}
-                className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer slider"
+                className="w-full h-2 bg-gray-200 text-black rounded-lg appearance-none cursor-pointer slider"
               />
               <div className="flex justify-between text-xs text-gray-400 mt-1">
                 <span>Poor</span>

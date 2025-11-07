@@ -180,7 +180,7 @@ export default function CommunityPage() {
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             placeholder="Search posts and discussions..."
-            className="w-full pl-10 pr-4 py-3 border border-gray-200 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+            className="w-full pl-10 pr-4 py-3 border border-gray-200 text-black rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
           />
         </div>
 
@@ -349,7 +349,7 @@ export default function CommunityPage() {
                 <input
                   type="text"
                   placeholder="What's on your mind?"
-                  className="w-full p-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-full p-3 border text-black border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                 />
               </div>
 
@@ -449,7 +449,7 @@ export default function CommunityPage() {
                   value={newMessage}
                   onChange={(e) => setNewMessage(e.target.value)}
                   placeholder="Type your message..."
-                  className="flex-1 p-3 border border-gray-200 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="flex-1 p-3 border border-gray-200 text-black rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                   onKeyPress={(e) => e.key === "Enter" && handleSendMessage(showChat)}
                 />
                 <button

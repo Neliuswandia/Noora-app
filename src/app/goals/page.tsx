@@ -403,7 +403,7 @@ export default function GoalsPage() {
                   value={newGoal.title}
                   onChange={(e) => setNewGoal({ ...newGoal, title: e.target.value })}
                   placeholder="e.g., Daily meditation"
-                  className="w-full p-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#4A90E2] focus:border-transparent"
+                  className="w-full p-3 text-black border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#4A90E2] focus:border-transparent"
                 />
               </div>
 
@@ -470,7 +470,7 @@ export default function GoalsPage() {
                     value={newGoal.targetValue}
                     onChange={(e) => setNewGoal({ ...newGoal, targetValue: Number.parseInt(e.target.value) || 1 })}
                     min="1"
-                    className="w-full p-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#4A90E2] focus:border-transparent"
+                    className="w-full p-3 border text-black border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#4A90E2] focus:border-transparent"
                   />
                 </div>
 
@@ -481,7 +481,7 @@ export default function GoalsPage() {
                     value={newGoal.unit}
                     onChange={(e) => setNewGoal({ ...newGoal, unit: e.target.value })}
                     placeholder="e.g., minutes, times"
-                    className="w-full p-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#4A90E2] focus:border-transparent"
+                    className="w-full p-3 border text-black border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#4A90E2] focus:border-transparent"
                   />
                 </div>
               </div>

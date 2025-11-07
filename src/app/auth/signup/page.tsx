@@ -140,7 +140,7 @@ export default function SignupPage() {
                     name="firstName"
                     value={formData.firstName}
                     onChange={handleInputChange}
-                    className="w-full p-4 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                    className="w-full p-4 border border-gray-200 text-black rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
                     placeholder="First name"
                     required
                   />
@@ -155,7 +155,7 @@ export default function SignupPage() {
                     name="lastName"
                     value={formData.lastName}
                     onChange={handleInputChange}
-                    className="w-full p-4 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                    className="w-full p-4 border border-gray-200 text-black rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
                     placeholder="Last name"
                     required
                   />
@@ -172,7 +172,7 @@ export default function SignupPage() {
                   name="email"
                   value={formData.email}
                   onChange={handleInputChange}
-                  className="w-full p-4 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                  className="w-full p-4 border text-black border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
                   placeholder="Enter your email"
                   required
                 />
@@ -188,7 +188,7 @@ export default function SignupPage() {
                   name="dateOfBirth"
                   value={formData.dateOfBirth}
                   onChange={handleInputChange}
-                  className="w-full p-4 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                  className="w-full p-4 border border-gray-200 text-black rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
                   required
                 />
                 <p className="text-xs text-gray-500 mt-1">You must be 18 or older to use SerenitySpace</p>
@@ -205,7 +205,7 @@ export default function SignupPage() {
                     name="password"
                     value={formData.password}
                     onChange={handleInputChange}
-                    className="w-full p-4 pr-12 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                    className="w-full p-4 pr-12 border border-gray-200 text-black rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
                     placeholder="Create a password"
                     required
                   />
@@ -231,7 +231,7 @@ export default function SignupPage() {
                     name="confirmPassword"
                     value={formData.confirmPassword}
                     onChange={handleInputChange}
-                    className="w-full p-4 pr-12 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                    className="w-full p-4 pr-12 border border-gray-200 text-black rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
                     placeholder="Confirm your password"
                     required
                   />

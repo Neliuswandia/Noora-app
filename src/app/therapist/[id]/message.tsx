@@ -267,7 +267,7 @@ export default function TherapistMessage() {
               onChange={(e) => setMessage(e.target.value)}
               onKeyPress={handleKeyPress}
               placeholder="Type a message..."
-              className="w-full p-3 pr-12 bg-[#F5F7FA] rounded-full border-0 focus:outline-none focus:ring-2 focus:ring-[#4A90E2] resize-none font-lora"
+              className="w-full p-3 pr-12 bg-[#F5F7FA] text-black rounded-full border-0 focus:outline-none focus:ring-2 focus:ring-[#4A90E2] resize-none font-lora"
             />
             <button className="absolute right-3 top-1/2 transform -translate-y-1/2 p-1 text-[#666666] hover:text-[#4A90E2] transition-colors">
               <Smile className="w-5 h-5" />

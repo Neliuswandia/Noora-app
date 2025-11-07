@@ -248,11 +248,11 @@ export default function CopingKit() {
               <input
                 type="text"
                 placeholder="Kit name (e.g., 'Morning Calm')"
-                className="w-full p-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#4A90E2] focus:border-transparent"
+                className="w-full p-3 border border-gray-200 text-black rounded-lg focus:outline-none focus:ring-2 focus:ring-[#4A90E2] focus:border-transparent"
               />
               <textarea
                 placeholder="Description (optional)"
-                className="w-full p-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#4A90E2] focus:border-transparent resize-none"
+                className="w-full p-3 border border-gray-200 text-black rounded-lg focus:outline-none focus:ring-2 focus:ring-[#4A90E2] focus:border-transparent resize-none"
                 rows={3}
               />
             </div>

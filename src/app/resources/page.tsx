@@ -174,7 +174,7 @@ export default function ResourcesPage() {
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             placeholder="Search articles, videos, and guides..."
-            className="w-full pl-10 pr-4 py-3 bg-white bg-opacity-20 border border-white border-opacity-30 rounded-full text-white placeholder-white placeholder-opacity-70 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50"
+            className="w-full pl-10 pr-4 py-3 text-black bg-white bg-opacity-20 border border-white border-opacity-30 rounded-full text-white placeholder-white placeholder-opacity-70 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50"
           />
         </div>
 

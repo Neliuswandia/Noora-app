@@ -107,7 +107,7 @@ export default function FindTherapist() {
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             placeholder="Search by name, specialization, or location..."
-            className="w-full pl-10 pr-4 py-3 border border-border rounded-full focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent bg-background text-foreground"
+            className="w-full pl-10 pr-4 py-3 border border-border text-black rounded-full focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent bg-background text-foreground"
           />
         </div>
 

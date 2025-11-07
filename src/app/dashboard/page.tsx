@@ -201,7 +201,7 @@ export default function Dashboard() {
                       max="5"
                       value={moodIntensity}
                       onChange={(e) => setMoodIntensity(Number.parseInt(e.target.value))}
-                      className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer slider"
+                      className="w-full h-2 bg-gray-200 text-black rounded-lg appearance-none cursor-pointer slider"
                       style={{
                         background: `linear-gradient(to right, ${getIntensityColor(moodIntensity)} 0%, ${getIntensityColor(moodIntensity)} ${((moodIntensity - 1) / 4) * 100}%, #e5e7eb ${((moodIntensity - 1) / 4) * 100}%, #e5e7eb 100%)`,
                       }}

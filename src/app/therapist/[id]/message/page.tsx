@@ -195,7 +195,7 @@ export default function TherapistMessagePage() {
       </div>
 
       {/* Input Area */}
-      <div className="bg-white border-t border-gray-200 p-4">
+      <div className="bg-white text-black border-t border-gray-200 p-4">
         <div className="flex items-end space-x-3">
           {/* Attachment Options */}
           <div className="flex space-x-2">

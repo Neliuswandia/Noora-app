@@ -848,7 +848,7 @@ export default function MoodTracker() {
                       max="5"
                       value={moodIntensity}
                       onChange={(e) => setMoodIntensity(Number.parseInt(e.target.value))}
-                      className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer slider"
+                      className="w-full h-2 text-black bg-gray-200 rounded-lg appearance-none cursor-pointer slider"
                       style={{
                         background: `linear-gradient(to right, ${getIntensityColor(moodIntensity)} 0%, ${getIntensityColor(moodIntensity)} ${((moodIntensity - 1) / 4) * 100}%, #e5e7eb ${((moodIntensity - 1) / 4) * 100}%, #e5e7eb 100%)`,
                       }}
@@ -932,7 +932,7 @@ export default function MoodTracker() {
                 value={journalTitle}
                 onChange={(e) => setJournalTitle(e.target.value)}
                 placeholder="Give your entry a title..."
-                className="w-full p-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#4A90E2] focus:border-transparent"
+                className="w-full p-3 border text-black border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#4A90E2] focus:border-transparent"
               />
             </div>
 

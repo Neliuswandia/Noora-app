@@ -211,7 +211,7 @@ export default function AICompanion() {
           <button
             onClick={handleVoiceToggle}
             className={`p-3 rounded-full ${
-              isRecording ? "bg-[#FF6F61] text-white animate-pulse" : "bg-[#F5F7FA] text-[#666666] hover:bg-[#E8F4FD]"
+              isRecording ? "bg-[#FF6F61] text-black animate-pulse" : "bg-[#F5F7FA] text-[#666666] hover:bg-[#E8F4FD]"
             }`}
           >
             {isRecording ? <MicOff className="w-5 h-5" /> : <Mic className="w-5 h-5" />}
@@ -229,7 +229,7 @@ export default function AICompanion() {
             <button
               onClick={handleSendMessage}
               disabled={!inputText.trim()}
-              className="absolute right-2 top-1/2 transform -translate-y-1/2 p-2 rounded-full bg-[#4A90E2] text-white disabled:opacity-50 disabled:cursor-not-allowed hover:bg-[#3A7BC8] transition-colors"
+              className="absolute right-2 top-1/2 transform -translate-y-1/2 p-2 rounded-full bg-[#4A90E2] text-black disabled:opacity-50 disabled:cursor-not-allowed hover:bg-[#3A7BC8] transition-colors"
             >
               <Send className="w-4 h-4" />
             </button>
