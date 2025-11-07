@@ -179,15 +179,15 @@ export default function SettingsPage() {
     <div className="overflow-auto h-screen bg-background pb-20">
       {/* Header */}
       <header className="bg-card shadow-sm border-b border-border p-6">
-        <h1 className="text-2xl font-bold text-foreground font-poppins">Settings</h1>
-        <p className="text-muted-foreground font-lora">Customize your SerenitySpace experience</p>
+        <h1 className="text-2xl font-bold text-foreground font-poppins text-black">Settings</h1>
+        <p className="font-lora text-black text-muted-foreground">Customize your SerenitySpace experience</p>
       </header>
 
       <main className="p-6 space-y-6">
         {/* Profile Section */}
         <div className="card">
           <div className="flex items-center space-x-4 mb-4">
-            <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-green-300 rounded-full flex items-center justify-center">
+            <div className="w-16 h-16 bg-linear-to-br from-blue-500 to-green-300 rounded-full flex items-center justify-center">
               <User className="w-8 h-8 text-white" />
             </div>
             <div>
@@ -196,7 +196,7 @@ export default function SettingsPage() {
             </div>
           </div>
           <a href="/profile/edit">
-            <button className="btn-secondary w-full">Edit Profile</button>
+            <button className="btn-secondary py-2 border border-gray-300 w-full text-black">Edit Profile</button>
           </a>
         </div>
 
@@ -204,14 +204,14 @@ export default function SettingsPage() {
         <div className="card">
           <div className="flex items-center mb-4">
             <Bell className="w-6 h-6 text-blue-500 mr-3" />
-            <h3 className="font-semibold text-foreground font-poppins">Notifications</h3>
+            <h3 className="font-semibold text-black text-foreground font-poppins">Notifications</h3>
           </div>
 
           <div className="space-y-4">
             <div className="flex items-center justify-between">
               <div>
-                <p className="font-medium text-foreground">Daily Check-in Reminders</p>
-                <p className="text-sm text-muted-foreground">Get reminded to log your mood</p>
+                <p className="font-medium text-black text-foreground">Daily Check-in Reminders</p>
+                <p className="text-sm  text-black text-muted-foreground">Get reminded to log your mood</p>
               </div>
               <label className="relative inline-flex items-center cursor-pointer">
                 <input
@@ -226,8 +226,8 @@ export default function SettingsPage() {
 
             <div className="flex items-center justify-between">
               <div>
-                <p className="font-medium text-foreground">Mood Reminders</p>
-                <p className="text-sm text-muted-foreground">Gentle reminders to track your mood</p>
+                <p className="font-medium text-black text-foreground">Mood Reminders</p>
+                <p className="text-sm text-black text-muted-foreground">Gentle reminders to track your mood</p>
               </div>
               <label className="relative inline-flex items-center cursor-pointer">
                 <input
@@ -242,8 +242,8 @@ export default function SettingsPage() {
 
             <div className="flex items-center justify-between">
               <div>
-                <p className="font-medium text-foreground">Community Updates</p>
-                <p className="text-sm text-muted-foreground">New posts and group activities</p>
+                <p className="font-medium text-black text-foreground">Community Updates</p>
+                <p className="text-sm text-black text-muted-foreground">New posts and group activities</p>
               </div>
               <label className="relative inline-flex items-center cursor-pointer">
                 <input
@@ -262,16 +262,16 @@ export default function SettingsPage() {
         <div className="card">
           <div className="flex items-center mb-4">
             <Brain className="w-6 h-6 text-green-400 mr-3" />
-            <h3 className="font-semibold text-foreground font-poppins">AI Companion</h3>
+            <h3 className="font-semibold text-black text-foreground font-poppins">AI Companion</h3>
           </div>
 
           <div className="space-y-4">
             <div>
-              <label className="block text-sm font-medium text-foreground mb-2">Communication Tone</label>
+              <label className="block text-sm font-medium text-black text-foreground mb-2">Communication Tone</label>
               <select
                 value={settings.ai.tone}
                 onChange={(e) => handleSettingChange("ai", "tone", e.target.value)}
-                className="w-full p-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full  text-black p-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
               >
                 <option value="supportive">Supportive & Encouraging</option>
                 <option value="professional">Professional & Clinical</option>
@@ -281,8 +281,8 @@ export default function SettingsPage() {
 
             <div className="flex items-center justify-between">
               <div>
-                <p className="font-medium text-foreground">Voice Responses</p>
-                <p className="text-sm text-muted-foreground">Enable text-to-speech</p>
+                <p className="font-medium text-black text-foreground">Voice Responses</p>
+                <p className="text-sm text-black   text-muted-foreground">Enable text-to-speech</p>
               </div>
               <button
                 onClick={() => handleSettingChange("ai", "voiceEnabled", !settings.ai.voiceEnabled)}
@@ -293,11 +293,11 @@ export default function SettingsPage() {
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-foreground mb-2">Response Length</label>
+              <label className="block text-sm text-black font-medium text-foreground mb-2">Response Length</label>
               <select
                 value={settings.ai.responseLength}
                 onChange={(e) => handleSettingChange("ai", "responseLength", e.target.value)}
-                className="w-full p-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full p-3 border text-black border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
               >
                 <option value="short">Short & Concise</option>
                 <option value="medium">Medium Detail</option>
@@ -311,14 +311,14 @@ export default function SettingsPage() {
         <div className="card">
           <div className="flex items-center mb-4">
             <Palette className="w-6 h-6 text-red-500 mr-3" />
-            <h3 className="font-semibold text-foreground font-poppins">Appearance</h3>
+            <h3 className="font-semibold text-foreground text-black font-poppins">Appearance</h3>
           </div>
 
           <div className="space-y-4">
             <div className="flex items-center justify-between">
               <div>
-                <p className="font-medium text-foreground">Theme</p>
-                <p className="text-sm text-muted-foreground">Choose your preferred theme</p>
+                <p className="font-medium text-black text-foreground">Theme</p>
+                <p className="text-sm text-black text-muted-foreground">Choose your preferred theme</p>
               </div>
               <button
                 onClick={() =>
@@ -331,11 +331,11 @@ export default function SettingsPage() {
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-foreground mb-2">Font Size</label>
+              <label className="block text-sm font-medium text-black text-foreground mb-2">Font Size</label>
               <select
                 value={settings.appearance.fontSize}
                 onChange={(e) => handleSettingChange("appearance", "fontSize", e.target.value)}
-                className="w-full p-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full text-black p-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
               >
                 <option value="small">Small</option>
                 <option value="medium">Medium</option>
@@ -345,8 +345,8 @@ export default function SettingsPage() {
 
             <div className="flex items-center justify-between">
               <div>
-                <p className="font-medium text-foreground">High Contrast Mode</p>
-                <p className="text-sm text-muted-foreground">Improve readability</p>
+                <p className="font-medium text-foreground text-black">High Contrast Mode</p>
+                <p className="text-sm text-black text-muted-foreground">Improve readability</p>
               </div>
               <label className="relative inline-flex items-center cursor-pointer">
                 <input
@@ -365,7 +365,7 @@ export default function SettingsPage() {
         <div className="card">
           <div className="flex items-center mb-4">
             <Shield className="w-6 h-6 text-green-500 mr-3" />
-            <h3 className="font-semibold text-foreground font-poppins">Privacy & Security</h3>
+            <h3 className="font-semibold text-foreground text-black font-poppins">Privacy & Security</h3>
           </div>
 
           <div className="space-y-4">
@@ -388,8 +388,8 @@ export default function SettingsPage() {
 
             <div className="flex items-center justify-between">
               <div>
-                <p className="font-medium text-foreground">Data Sharing for Research</p>
-                <p className="text-sm text-muted-foreground">Help improve mental health research</p>
+                <p className="font-medium text-foreground text-black">Data Sharing for Research</p>
+                <p className="text-sm text-muted-foreground text-black">Help improve mental health research</p>
               </div>
               <label className="relative inline-flex items-center cursor-pointer">
                 <input
@@ -408,13 +408,13 @@ export default function SettingsPage() {
         <div className="card">
           <div className="flex items-center mb-4">
             <Globe className="w-6 h-6 text-blue-500 mr-3" />
-            <h3 className="font-semibold text-foreground font-poppins">Language</h3>
+            <h3 className="font-semibold text-foreground text-black font-poppins">Language</h3>
           </div>
 
           <select
             value={settings.language}
             onChange={(e) => handleSettingChange("", "language", e.target.value)}
-            className="w-full p-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+            className="w-full p-3 border text-black border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
           >
             <option value="en">English</option>
             <option value="es">Español</option>
@@ -426,14 +426,14 @@ export default function SettingsPage() {
 
         {/* Account Actions */}
         <div className="card">
-          <h3 className="font-semibold text-foreground font-poppins mb-4">Account</h3>
+          <h3 className="font-semibold text-black text-foreground font-poppins mb-4">Account</h3>
 
           <div className="space-y-3">
             <button
               onClick={handleLogout}
-              className="w-full flex items-center justify-center p-3 border border-gray-200 rounded-lg text-muted-foreground hover:bg-accent transition-colors"
+              className="w-full flex items-center text-black justify-center p-3 border border-gray-200 rounded-lg text-muted-foreground hover:bg-accent transition-colors"
             >
-              <LogOut className="w-5 h-5 mr-2" />
+              <LogOut className="w-5 h-5 mr-2 text-black" />
               Sign Out
             </button>
 

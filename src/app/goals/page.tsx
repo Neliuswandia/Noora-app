@@ -333,7 +333,7 @@ export default function GoalsPage() {
 
                 {/* Completion Celebration */}
                 {goal.completed && (
-                  <div className="mt-3 p-3 bg-gradient-to-r from-[#A3D8C6] to-[#4A90E2] rounded-lg text-white text-center">
+                  <div className="mt-3 p-3 bg-linear-to-r from-[#A3D8C6] to-[#4A90E2] rounded-lg text-white text-center">
                     <Award className="w-5 h-5 mx-auto mb-1" />
                     <p className="text-sm font-medium">Goal Completed! 🎉</p>
                   </div>

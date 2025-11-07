@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { Calendar } from "@/components/ui/calendar"
+// import { Calendar } from "@/components/ui/calendar"
 import {
   TrendingUp,
   Plus,
@@ -371,7 +371,7 @@ export default function MoodTracker() {
             {/* Calendar with Cute Design */}
             <div className="bg-white rounded-2xl p-6 shadow-sm border-2 border-[#E8F4FD]">
               <h3 className="font-semibold mb-4 font-poppins flex items-center gap-2">
-                <div className="w-8 h-8 bg-gradient-to-r from-[#4A90E2] to-[#A3D8C6] rounded-full flex items-center justify-center">
+                <div className="w-8 h-8 bg-linear-to-r from-[#4A90E2] to-[#A3D8C6] rounded-full flex items-center justify-center">
                   <Target className="w-4 h-4 text-white" />
                 </div>
                 Calendar
@@ -382,7 +382,7 @@ export default function MoodTracker() {
                 </div>
               </h3>
 
-              <div className="bg-gradient-to-br from-[#F8FBFF] to-[#F0F8FF] rounded-2xl p-4 border border-[#E8F4FD]">
+              {/* <div className="bg-linear-to-br from-[#F8FBFF] to-[#F0F8FF] rounded-2xl p-4 border border-[#E8F4FD]">
                 <Calendar
                   mode="single"
                   selected={selectedDate}
@@ -417,11 +417,11 @@ export default function MoodTracker() {
                     day_hidden: "invisible",
                   }}
                 />
-              </div>
+              </div> */}
 
               {/* Selected Date Info with Cute Design */}
               {selectedDate && (
-                <div className="mt-6 p-4 bg-gradient-to-r from-[#F8FBFF] via-[#F0F8FF] to-[#E8F4FD] rounded-2xl border-2 border-[#E8F4FD] relative overflow-hidden">
+                <div className="mt-6 p-4 bg-linear-to-r from-[#F8FBFF] via-[#F0F8FF] to-[#E8F4FD] rounded-2xl border-2 border-[#E8F4FD] relative overflow-hidden">
                   {/* Decorative elements */}
                   <div className="absolute top-2 right-2 w-6 h-6 bg-[#FFB6C1] rounded-full opacity-20"></div>
                   <div className="absolute bottom-2 left-2 w-4 h-4 bg-[#A3D8C6] rounded-full opacity-30"></div>
@@ -429,7 +429,7 @@ export default function MoodTracker() {
 
                   <div className="relative z-10">
                     <div className="flex items-center gap-2 mb-3">
-                      <div className="w-6 h-6 bg-gradient-to-r from-[#4A90E2] to-[#A3D8C6] rounded-full flex items-center justify-center">
+                      <div className="w-6 h-6 bg-linear-to-r from-[#4A90E2] to-[#A3D8C6] rounded-full flex items-center justify-center">
                         <div className="w-2 h-2 bg-white rounded-full"></div>
                       </div>
                       <p className="text-sm font-bold text-[#4A90E2] font-poppins text-lg">
@@ -449,7 +449,7 @@ export default function MoodTracker() {
                       if (mood && entry) {
                         return (
                           <div className="flex items-center gap-4 p-3 bg-white/70 rounded-xl backdrop-blur-sm border border-white/50">
-                            <div className="w-12 h-12 bg-gradient-to-br from-white to-[#F8FBFF] rounded-full flex items-center justify-center shadow-md border-2 border-[#E8F4FD]">
+                            <div className="w-12 h-12 bg-linear-to-br from-white to-[#F8FBFF] rounded-full flex items-center justify-center shadow-md border-2 border-[#E8F4FD]">
                               <span className="text-2xl">{mood.emoji}</span>
                             </div>
                             <div className="flex-1">
@@ -462,7 +462,7 @@ export default function MoodTracker() {
                                       key={i}
                                       className={`w-2 h-2 rounded-full ${
                                         i < entry.intensity
-                                          ? "bg-gradient-to-r from-[#4A90E2] to-[#A3D8C6]"
+                                          ? "bg-linear-to-r from-[#4A90E2] to-[#A3D8C6]"
                                           : "bg-[#E8F4FD]"
                                       }`}
                                     />
@@ -483,7 +483,7 @@ export default function MoodTracker() {
                       } else {
                         return (
                           <div className="text-center py-4">
-                            <div className="w-16 h-16 bg-gradient-to-br from-[#E8F4FD] to-[#F0F8FF] rounded-full flex items-center justify-center mx-auto mb-3 border-2 border-[#A3D8C6] border-dashed">
+                            <div className="w-16 h-16 bg-linear-to-br from-[#E8F4FD] to-[#F0F8FF] rounded-full flex items-center justify-center mx-auto mb-3 border-2 border-[#A3D8C6] border-dashed">
                               <Plus className="w-8 h-8 text-[#A3D8C6]" />
                             </div>
                             <p className="text-sm text-[#666666] mb-3 font-poppins">
@@ -491,7 +491,7 @@ export default function MoodTracker() {
                             </p>
                             <button
                               onClick={() => setShowAddEntry(true)}
-                              className="bg-gradient-to-r from-[#4A90E2] to-[#A3D8C6] text-white px-6 py-2 rounded-full text-sm font-bold hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl font-poppins"
+                              className="bg-linear-to-r from-[#4A90E2] to-[#A3D8C6] text-white px-6 py-2 rounded-full text-sm font-bold hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl font-poppins"
                             >
                               ✨ Add mood entry
                             </button>
@@ -506,7 +506,7 @@ export default function MoodTracker() {
 
             {/* Daily Check-in Card with Cute Design */}
             <div className="bg-white rounded-2xl p-6 shadow-lg relative overflow-hidden border-2 border-[#E8F4FD]">
-              <div className={`absolute inset-0 bg-gradient-to-br ${moodSuggestion.color} opacity-90`}></div>
+              <div className={`absolute inset-0 bg-linear-to-br ${moodSuggestion.color} opacity-90`}></div>
 
               {/* Cute decorative elements */}
               <div className="absolute top-4 right-4 w-8 h-8 bg-white/20 rounded-full"></div>
@@ -541,9 +541,9 @@ export default function MoodTracker() {
             {/* Mood Insights Grid with Cute Design */}
             <div className="grid grid-cols-2 gap-4">
               <div className="bg-white rounded-2xl p-6 shadow-sm text-center relative overflow-hidden border-2 border-[#E8F4FD]">
-                <div className="absolute top-0 right-0 w-16 h-16 bg-gradient-to-br from-[#4A90E2]/10 to-[#A3D8C6]/10 rounded-full -translate-y-4 translate-x-4"></div>
+                <div className="absolute top-0 right-0 w-16 h-16 bg-linear-to-br from-[#4A90E2]/10 to-[#A3D8C6]/10 rounded-full -translate-y-4 translate-x-4"></div>
                 <div className="relative z-10">
-                  <div className="w-14 h-14 bg-gradient-to-br from-green-400 to-blue-500 rounded-full flex items-center justify-center mx-auto mb-3 shadow-lg border-4 border-white">
+                  <div className="w-14 h-14 bg-linear-to-br from-green-400 to-blue-500 rounded-full flex items-center justify-center mx-auto mb-3 shadow-lg border-4 border-white">
                     <Zap className="w-7 h-7 text-white" />
                   </div>
                   <h3 className="text-3xl font-bold text-[#333333] font-poppins mb-1">{getMoodStreak()}</h3>
@@ -552,7 +552,7 @@ export default function MoodTracker() {
                     {[...Array(3)].map((_, i) => (
                       <div
                         key={i}
-                        className="w-1.5 h-1.5 bg-gradient-to-r from-green-400 to-blue-500 rounded-full"
+                        className="w-1.5 h-1.5 bg-linear-to-r from-green-400 to-blue-500 rounded-full"
                       ></div>
                     ))}
                   </div>
@@ -560,9 +560,9 @@ export default function MoodTracker() {
               </div>
 
               <div className="bg-white rounded-2xl p-6 shadow-sm text-center relative overflow-hidden border-2 border-[#E8F4FD]">
-                <div className="absolute top-0 left-0 w-16 h-16 bg-gradient-to-br from-purple-400/10 to-pink-500/10 rounded-full -translate-y-4 -translate-x-4"></div>
+                <div className="absolute top-0 left-0 w-16 h-16 bg-linear-to-br from-purple-400/10 to-pink-500/10 rounded-full -translate-y-4 -translate-x-4"></div>
                 <div className="relative z-10">
-                  <div className="w-14 h-14 bg-gradient-to-br from-purple-400 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-3 shadow-lg border-4 border-white">
+                  <div className="w-14 h-14 bg-linear-to-br from-purple-400 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-3 shadow-lg border-4 border-white">
                     <Heart className="w-7 h-7 text-white" />
                   </div>
                   <h3 className="text-3xl font-bold text-[#333333] font-poppins mb-1">{getWeeklyAverage()}</h3>
@@ -571,7 +571,7 @@ export default function MoodTracker() {
                     {[...Array(3)].map((_, i) => (
                       <div
                         key={i}
-                        className="w-1.5 h-1.5 bg-gradient-to-r from-purple-400 to-pink-500 rounded-full"
+                        className="w-1.5 h-1.5 bg-linear-to-r from-purple-400 to-pink-500 rounded-full"
                       ></div>
                     ))}
                   </div>
@@ -581,12 +581,12 @@ export default function MoodTracker() {
 
             {/* Quick Mood Check with Cute Design */}
             <div className="bg-white rounded-2xl p-6 shadow-sm border-2 border-[#E8F4FD] relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-[#FFB6C1]/20 to-[#FFC0CB]/20 rounded-full -translate-y-6 translate-x-6"></div>
-              <div className="absolute bottom-0 left-0 w-16 h-16 bg-gradient-to-br from-[#A3D8C6]/20 to-[#4A90E2]/20 rounded-full translate-y-4 -translate-x-4"></div>
+              <div className="absolute top-0 right-0 w-20 h-20 bg-linear-to-br from-[#FFB6C1]/20 to-[#FFC0CB]/20 rounded-full -translate-y-6 translate-x-6"></div>
+              <div className="absolute bottom-0 left-0 w-16 h-16 bg-linear-to-br from-[#A3D8C6]/20 to-[#4A90E2]/20 rounded-full translate-y-4 -translate-x-4"></div>
 
               <div className="relative z-10">
                 <h3 className="font-semibold mb-6 font-poppins flex items-center gap-3 text-lg">
-                  <div className="w-8 h-8 bg-gradient-to-r from-[#4A90E2] to-[#A3D8C6] rounded-full flex items-center justify-center">
+                  <div className="w-8 h-8 bg-linear-to-r from-[#4A90E2] to-[#A3D8C6] rounded-full flex items-center justify-center">
                     <Smile className="w-4 h-4 text-white" />
                   </div>
                   Quick Mood Check
@@ -602,10 +602,10 @@ export default function MoodTracker() {
                         setSelectedMood(mood.label)
                         setShowAddEntry(true)
                       }}
-                      className="p-4 rounded-2xl bg-gradient-to-br from-[#F8FBFF] to-[#F0F8FF] hover:from-[#E8F4FD] hover:to-[#F8FBFF] transition-all duration-300 text-center group hover:scale-110 shadow-sm hover:shadow-lg border-2 border-[#E8F4FD] hover:border-[#A3D8C6] relative overflow-hidden"
+                      className="p-4 rounded-2xl bg-linear-to-br from-[#F8FBFF] to-[#F0F8FF] hover:from-[#E8F4FD] hover:to-[#F8FBFF] transition-all duration-300 text-center group hover:scale-110 shadow-sm hover:shadow-lg border-2 border-[#E8F4FD] hover:border-[#A3D8C6] relative overflow-hidden"
                       style={{ animationDelay: `${index * 100}ms` }}
                     >
-                      <div className="absolute inset-0 bg-gradient-to-br from-white/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                      <div className="absolute inset-0 bg-linear-to-br from-white/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                       <div className="relative z-10">
                         <div className="text-3xl mb-2 group-hover:scale-125 transition-transform duration-300 filter group-hover:drop-shadow-lg">
                           {mood.emoji}
@@ -667,7 +667,7 @@ export default function MoodTracker() {
 
             {/* Achievement Badge */}
             {getMoodStreak() >= 3 && (
-              <div className="bg-white rounded-2xl p-6 shadow-sm bg-gradient-to-r from-yellow-400 to-orange-500 text-white">
+              <div className="bg-white rounded-2xl p-6 shadow-sm bg-linear-to-r from-yellow-400 to-orange-500 text-white">
                 <div className="flex items-center gap-3">
                   <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
                     <Award className="w-6 h-6" />
